@@ -42,7 +42,7 @@ function Heading() {
     },
     {
       name: "Special Item",
-     
+
       dollar: "$20.00 $18.00",
       button: "Add to Cart",
     },
@@ -148,9 +148,17 @@ function Heading() {
         paddingTop={"100px"}
       >
         {Pricedetails?.map((item) => (
-          <Grid item xs={2} marginLeft={"70px"}  paddingBottom={"70px"}  marginRight={"70px"} paddingRight={"10px" }  >
-            <Card sx={{ minWidth: 250, minHeight: "450px" ,textAlign:"center"
-}}>
+          <Grid
+            item
+            xs={2}
+            marginLeft={"70px"}
+            paddingBottom={"70px"}
+            marginRight={"70px"}
+            paddingRight={"10px"}
+          >
+            <Card
+              sx={{ minWidth: 250, minHeight: "450px", textAlign: "center" }}
+            >
               <CardContent>
                 <img
                   src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg"
@@ -167,21 +175,20 @@ function Heading() {
                   }}
                 >
                   {item?.name}
-                  
-                 
 
                   <Rating name="read-only" value={value} readOnly />
 
                   <Typography>{item?.dollar}</Typography>
                 </Typography>
-              </CardContent><br /><br />
-             
+              </CardContent>
+              <br />
+              <br />
+
               <Button variant="outlined">{item?.button}</Button>
             </Card>
           </Grid>
         ))}
       </Grid>
-
 
       <Grid
         container
